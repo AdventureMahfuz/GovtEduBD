@@ -1,0 +1,134 @@
+/*header section start*/
+.top-banner {
+  background-image: linear-gradient(to bottom, #1643d0, #0087fd, #00b5da, #00d993, #bdf05d);
+  position: relative;
+}
+
+.institute-info {
+  padding: 10px 0;
+  h2 {
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  p {
+    color: #fff;
+  }
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.social-link {
+  margin-top: 40px;
+  text-align: right;
+  ul {
+    li {
+      display: inline-block;
+      a {
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 5px;
+        @include transform(scale(1));
+        transition: all .5s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.overlay {
+  @extend %absolute;
+  background: #000;
+  opacity: .3;
+}
+
+.main-navigation {
+  background: $primary;
+  ul#nav {
+    text-align: center;
+    li {
+      display: inline-block;
+      a {
+        color: #ffffff;
+        padding: 10px 35px;
+        display: block;
+        opacity: 1;
+        transition: all .5s;
+        &:hover {
+          background: #ffffff;
+          color: $primary;
+          transition: all .5s;
+        }
+      }
+    }
+    li.active{
+      a{
+        background: #ffffff;
+        color: $primary;
+      }
+    }
+    li.sub-items {
+      position: relative;
+      &:hover ul {
+        display: block;
+      }
+      ul {
+        position: absolute;
+        left: 0;
+        width: 280px;
+        background: $primary;
+        text-align: left;
+        z-index: 2;
+        display: none;
+        li {
+          display: block;
+          a {
+            padding: 10px;
+            border-bottom: 1px solid #fff;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.latest-notice {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  background: $bg-color;
+  border-bottom: 1px solid $primary;
+  border-top: 1px solid $primary;
+  span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: $primary;
+    padding: 4px 15px;
+    color: #ffffff;
+  }
+  a {
+    color: $primary;
+    text-transform: capitalize;
+    position: relative;
+    top: 4px;
+    margin-right: 15px;
+    &:hover{
+      color: $gray;
+    }
+  }
+}
+
+/*header section end*/

@@ -1,0 +1,38 @@
+/*sidebar style start*/
+.side-widget {
+  border: 1px solid $primary;
+  margin-bottom: 30px;
+  background: #fff;
+  h3 {
+    @extend %section-title;
+  }
+  .notice-board{
+    border: none;
+  }
+  .wid-cont{
+    p:nth-child(2n-1){
+      background: $bg-color;
+    }
+    p{
+      padding: 10px;
+      margin: 0;
+      i{
+        color: $primary;
+        margin-right: 10px;
+      }
+      span{
+        float: right;
+        display: none;
+        cursor: pointer;
+        transition: all .5s;
+      }
+      &:hover span{
+        display: block;
+        transition: all .5s;
+      }
+    }
+    overflow: hidden;
+  }
+}
+
+/*sidebar style end*/

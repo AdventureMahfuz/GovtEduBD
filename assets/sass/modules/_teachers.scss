@@ -1,0 +1,78 @@
+/*teacher section style start*/
+.teacher-section{
+  background: $bg-color;
+  .section-title{
+    text-align: center;
+    h2{
+      @extend %section-title;
+      @extend %section-title-two
+    }
+  }
+  .all-teacher{
+    .single-teacher{
+      margin: 10px;
+      overflow: hidden;
+      background: #ffffff;
+      @extend %box-shadow;
+      .teacher-thumb{
+        width: 100%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+      }
+      .teacher-bio{
+        padding: 15px 0;
+        .teacher-info{
+          margin-bottom: 5px;
+          h4{
+            font-size: 1.1em;
+            font-weight: 700;
+            margin: 0;
+          }
+          span{
+            color: $light-gray;
+            font-size: 1em;
+          }
+        }
+        .teacher-social-link{
+          ul{
+            li{
+              display: inline-block;
+              a{
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                color: #fff;
+                display: block;
+                background: $primary;
+                @include transform(scale(1));
+                transition: all .5s;
+                &:hover{
+                  @include transform(scale(1.1));
+                  transition: all .5s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .owl-nav{
+      text-align: right;
+      margin-top: 30px;
+      button{
+        &:focus{
+          outline: none;
+        }
+        span{
+          @extend %owl-span;
+          background: $primary;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+/*teacher section style end*/

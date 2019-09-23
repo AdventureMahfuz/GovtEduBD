@@ -1,0 +1,20 @@
+/*footer style start*/
+.footer-section{
+  background: $primary;
+  margin-bottom: 38px;
+  p{
+    text-transform: capitalize;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    a{
+      font-weight: 700;
+      color: #fff;
+      opacity: .7;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}
+/*footer style end*/
