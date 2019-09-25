@@ -8,7 +8,7 @@
   height: 100%;
 }
 
-.gallery-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2, .notice-board h3, .side-widget h3 {
+.single-page-post-area .single-title h2, .gallery-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2, .notice-board h3, .side-widget h3 {
   text-align: center;
   background: #1643D0;
   color: #fff;
@@ -16,7 +16,7 @@
   padding: 10px;
 }
 
-.gallery-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2 {
+.single-page-post-area .single-title h2, .gallery-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2 {
   color: #4a4a4a;
   background: none;
   display: inline-block;
@@ -309,6 +309,123 @@ section.latest-notice a:hover {
 }
 
 /*sidebar style end*/
+/*mobile view menubar start*/
+.sticky-area-mobile-view {
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  background: #1643D0;
+  width: 100%;
+  height: 65px;
+  border-top: 1px solid #fff;
+}
+
+.mobile-menu-btn i.fa {
+  font-size: 27px;
+}
+
+.mobile-sticky-bar-common-style {
+  width: 25%;
+  float: left;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.mobile-sticky-bar-common-style i.fa {
+  color: #fff;
+  font-size: 22px;
+}
+
+.mobile-sticky-bar-common-style p {
+  color: #fff;
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+  margin-top: -3px;
+}
+
+.sticky-area-mobile-view {
+  display: none;
+}
+
+ul.mobile-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #1643D0;
+  position: fixed;
+  bottom: 48px;
+  right: -100%;
+  z-index: 9999;
+  width: 100%;
+  opacity: 0;
+  overflow: scroll;
+  height: 40%;
+  transition: all 0.5s;
+}
+
+ul.mobile-menu li a {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+  transition: all 0.5s;
+  display: block;
+  padding: 10px 20px;
+}
+
+#close {
+  position: absolute;
+  right: 9px;
+  top: 3px;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 2px;
+}
+
+.order-page-cart {
+  background: #fec752;
+  width: 36%;
+  float: left;
+  border-radius: 10px;
+  text-align: center;
+  margin: 7px 0;
+}
+
+.amount {
+  display: inline-block;
+}
+
+.amount span {
+  color: #000;
+  display: block;
+}
+
+.item-count {
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.item-count i.fa {
+  font-size: 35px;
+  color: #fff;
+}
+
+.item-count span {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -25%);
+  font-weight: 700;
+  color: #000;
+}
+
+/*mobile view menubar end*/
 /*slider section start*/
 .hero-section {
   background: #DBECFD;
@@ -747,21 +864,22 @@ gallery section start
   border: 1px solid #999;
 }
 .mobile-gallery-filter-menu h6 {
-  font-size: 1.5em;
+  font-size: 1.1em;
   text-transform: capitalize;
   margin: 0;
   padding: 10px;
   text-align: left;
   display: inline-block;
+  font-weight: 700;
 }
 .mobile-gallery-filter-menu p {
   display: inline-block;
   float: right;
   color: #1643D0;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
-  padding: 12px;
-  font-size: 1.5em;
+  padding: 8px;
+  font-size: 1.1em;
   border-left: 1px solid #333;
 }
 .mobile-gallery-filter-menu ul#mobile_filter {
@@ -903,6 +1021,43 @@ gallery section start
 /**
 ================================================================================
 gallery page end
+================================================================================
+*/
+/**
+================================================================================
+single page start
+================================================================================
+*/
+.single-page-post-area .single-page-thumb {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px #333;
+  width: 350px;
+}
+.single-page-post-area .single-page-thumb:hover .single-page-overly-bg {
+  height: 100%;
+  visibility: visible;
+  transition: all 0.5s;
+}
+.single-page-post-area .single-page-thumb .single-page-overly-bg {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background: #1643D0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.5;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+/**
+================================================================================
+single page end
 ================================================================================
 */
 /*footer style start*/

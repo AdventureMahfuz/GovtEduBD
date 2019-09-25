@@ -61,21 +61,22 @@ gallery section start
   display: none;
   border: 1px solid #999;
   h6 {
-    font-size: 1.5em;
+    font-size: 1.1em;
     text-transform: capitalize;
     margin: 0;
     padding: 10px;
     text-align: left;
     display: inline-block;
+    font-weight: 700;
   }
   p {
     display: inline-block;
     float: right;
     color: $primary;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
-    padding: 12px;
-    font-size: 1.5em;
+    padding: 8px;
+    font-size: 1.1em;
     border-left: 1px solid #333;
   }
   ul#mobile_filter {
