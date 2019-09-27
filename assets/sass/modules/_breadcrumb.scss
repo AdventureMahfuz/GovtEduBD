@@ -23,6 +23,10 @@
         color: #fff;
         font-weight: 700;
         opacity: 0.8;
+        &:hover{
+          color: $primary;
+          opacity: 1;
+        }
       }
     }
   }
