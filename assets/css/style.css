@@ -1,6 +1,6 @@
 /*color variables start*/
 /*color variables end*/
-.lecture .l-content:before, .style-2-gallery-items .single-s2g-item .s2g-popup-icon:after, .style-2-gallery-items .single-s2g-item .s2g-popup-icon i, .single-slider h4:after, .overlay, .theme-btn a:after {
+.lecture .l-content:before, .style-2-gallery-items .single-s2g-item .s2g-popup-icon:after, .style-2-gallery-items .single-s2g-item .s2g-popup-icon i, .breadcrumb-section .overlay, .single-slider h4:after, .overlay, .theme-btn a:after {
   position: absolute;
   left: 0;
   top: 0;
@@ -247,6 +247,7 @@ span.date {
 
 section.latest-notice {
   position: fixed;
+  width: 100%;
   bottom: 0;
   z-index: 10;
   background: #DBECFD;
@@ -498,6 +499,43 @@ ul.mobile-menu li a {
 }
 
 /*slider section end*/
+/*breadcrumb section start*/
+.breadcrumb-section {
+  position: relative;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+.breadcrumb-section .overlay {
+  background: #000000;
+  opacity: 0.9;
+  z-index: -1;
+}
+.breadcrumb-section ul {
+  z-index: 10;
+}
+.breadcrumb-section ul li {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  opacity: 0.8;
+}
+.breadcrumb-section ul li a {
+  color: #fff;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.breadcrumb-section h2 {
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+/*breadcrumb section end*/
 /*teacher section style start*/
 .teacher-section {
   background: #DBECFD;
@@ -1118,6 +1156,9 @@ single page end
 }
 .footer-section p a:hover {
   opacity: 1;
+}
+.footer-section p a img {
+  width: 7%;
 }
 
 /*footer style end*/
