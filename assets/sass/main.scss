@@ -18,8 +18,9 @@
 @import "modules/_gallery-style-2.scss";
 @import "modules/_contact.scss";
 
-@import "pages/_front-page.scss";
-@import "pages/_single-page.scss";
+@import "pages/front-page";
+@import "pages/single-page";
+@import "pages/communication-page";
 
 
 @import "layouts/_footer.scss";

@@ -8,7 +8,7 @@
   height: 100%;
 }
 
-.single-page-post-area .single-title h2, .gallery-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2, .notice-board h3, .side-widget h3 {
+.communication-section .table-title h2, .single-page-post-area .single-title h2, .gallery-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2, .notice-board h3, .side-widget h3 {
   text-align: center;
   background: #1643D0;
   color: #fff;
@@ -16,7 +16,7 @@
   padding: 10px;
 }
 
-.single-page-post-area .single-title h2, .gallery-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2 {
+.communication-section .table-title h2, .single-page-post-area .single-title h2, .gallery-title h2, .testimonial-section .testimonial-title h2, .blog-title h2, .teacher-section .section-title h2 {
   color: #4a4a4a;
   background: none;
   display: inline-block;
@@ -24,7 +24,7 @@
   margin-bottom: 25px;
 }
 
-.lecture .l-content, .lecture .thumb img, .testimonial-section .testimonials .single-testimonial, .articles .admission, .articles .single-article, .teacher-section .all-teacher .single-teacher {
+.communication-section table, .lecture .l-content, .lecture .thumb img, .testimonial-section .testimonials .single-testimonial, .articles .admission, .articles .single-article, .teacher-section .all-teacher .single-teacher {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -1060,6 +1060,46 @@ single page start
 single page end
 ================================================================================
 */
+/*communication page start*/
+.communication-section .institute-info {
+  margin-bottom: 35px;
+}
+.communication-section .institute-info h2 {
+  color: #4a4a4a;
+}
+.communication-section .institute-info p {
+  color: #4a4a4a;
+}
+.communication-section .table-title h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.communication-section strong {
+  margin-top: 35px;
+  font-size: 1.2em;
+}
+.communication-section table {
+  width: 100%;
+  border: 1px solid #dee2e6;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.communication-section table thead {
+  background: #1643D0;
+  color: #ffffff;
+}
+.communication-section table thead tr th {
+  padding: 10px 5px;
+}
+.communication-section table tbody tr td {
+  padding: 7px;
+}
+.communication-section table tbody tr:nth-child(2n-1) {
+  background: #DBECFD;
+}
+
+/*communication page end*/
 /*footer style start*/
 .footer-section {
   background: #1643D0;
